@@ -19,6 +19,11 @@ steps {
 echo "this is a deploying stage"
 }
 }
+  stage ('Artifactory') {
+    steps {
+      echo "send the build to jfrog"
+    }
+  }
 }
 }
 
